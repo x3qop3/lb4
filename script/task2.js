@@ -9,9 +9,9 @@ function addRectangle() {
   let b = Math.floor(Math.random() * (256));
   let color = '#' + r.toString(16) + g.toString(16) + b.toString(16);
 
-  let widthNumber = getRandomInt(40, 150);
+  let widthNumber = getRandomInt(40, 100);
   let widthPX = widthNumber.toString(10) + 'px';
-  let heightNumber = getRandomInt(40, 150);
+  let heightNumber = getRandomInt(40, 50);
   let heightPX = heightNumber.toString(10) + 'px';
 
   let leftNumber = getRandomInt(0, 600);
@@ -51,38 +51,7 @@ function addRectangle() {
   };
 }
 
-function moveRect(e) {
-  let Rect = document.getElementById("highlight");
 
-  let cs = window.getComputedStyle(Rect); 
-
-  let left = parseInt(cs.left);
-  let top = parseInt(cs.top);
-
-  switch (e.keyCode) {
-    case 37: 
-      if (Rect.offsetLeft > 0)
-        Rect.style.left = left - 20 + "px";
-      break;
-    case 38: 
-      if (top > 0)
-        Rect.style.top = top - 20 + "px";
-      break;
-    case 39: 
-      if (left < document.documentElement.clientWidth - 100)
-        Rect.style.left = left + 20 + "px";
-      break;
-    case 40: 
-      if (top < document.documentElement.clientHeight - 100)
-        Rect.style.top = top + 20 + "px";
-      break;
-  }
-
-  
-
-}
-
-addEventListener("keydown", moveRect);
 
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;

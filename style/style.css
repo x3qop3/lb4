@@ -265,3 +265,54 @@
   padding-bottom: 5%;
   padding-left: 4%;
 }
+
+/*
+            TASK4
+*/
+
+#field4 {
+  background-color: bisque;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+
+#field4 div {
+  position: absolute;
+}
+
+.draggable {
+  cursor: pointer;
+}
+
+.tassk4 {
+  display: flex;
+}
+
+.show4 {
+  height: auto;
+  width: 70%;
+  background-color: rgb(81, 38, 197);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#field4 {
+  padding: 20px;
+  border-radius: 8px;
+  height: 418px;
+  width: 80%;
+  background-color: #ffffff;
+  margin: auto;
+}
+
+.insert4 {
+  color: #ffc832;
+  height: auto;
+  width: 30%;
+  background-color: rgb(81, 38, 197);
+  padding-top: 8%;
+  padding-bottom: 5%;
+  padding-left: 4%;
+}
