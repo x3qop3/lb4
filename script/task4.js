@@ -90,7 +90,7 @@ function addBlock() {
        x2=x1-49;
        y2=y1-111; 
   }
-  document.ondblclick=function()
+  document.onclick=function()
   {
     if(x1>50 && x1<630 && y1>110 && y1<600)
     {
